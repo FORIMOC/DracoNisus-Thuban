@@ -1,0 +1,48 @@
+version: 3.1.0_build_20230809
+server:
+  # gin 后端的运行端口
+  port: 8740
+datasource:
+  host: 127.0.0.1
+  port: 3306
+  database: DracoNisus
+  username: root
+  password: ycy253255
+  charset: utf8mb4
+email:
+  address: DracoNisus@163.com
+  password: CXm9XTmJfP6eYhk
+listen:
+  # 白名单群聊 ID（不会对这些群内的消息进行处理）
+  whitelistGroupID:
+  # 默认的群聊监听模式
+  defaultMode: 2
+owner:
+  # 初始化创建的全权管理员的账号密码（修改后需要重启后端程序）
+  ID: 2097517935
+  password: 123123321987
+bot:
+  # 机器人 ID
+  selfID: 1686412975
+  # 机器人的 go-cqhttp 监听的端口
+  port: 5701
+jwt:
+  # token 过期时间（天）
+  expirationDay: 7
+data_limit:
+  # 群内用户发言频率展示长度
+  groupUserLimit: 5
+  # 群内社交网络点个数展示长度
+  groupGraphPointLimit: 10
+  # 群内社交网络计算中最大上下消息影响长度
+  groupGraphMaxAffectMessageLimit: 10
+  # 群内发言时间序列保存&展示长度
+  groupTimeLimit: 5
+  # 群内单用户发言时间序列保存长度
+  groupUserTimeLimit: 30
+  # 群内关键词展示长度
+  groupKeywordLimit: 30
+  # 群内缓存消息保存&展示长度
+  groupCacheMessageLimit: 50
+  # 群内缓存消息临界时删除长度
+  groupCacheMessageFlushLimit: 10
