@@ -7,11 +7,11 @@ datasource:
   port: 3306
   database: DracoNisus
   username: root
-  password: ycy253255
+  password: passwd
   charset: utf8mb4
 email:
   address: DracoNisus@163.com
-  password: CXm9XTmJfP6eYhk
+  password: passwd
 listen:
   # 白名单群聊 ID（不会对这些群内的消息进行处理）
   whitelistGroupID:
